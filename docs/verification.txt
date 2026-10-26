@@ -1,0 +1,11 @@
+PASS: /health returns HTTP 200 through Nginx
+PASS: note creation, reading and input validation
+Created note #1: persistence-f614c05165e94e8a8c7e0d345570fc78
+PASS: all services healthy; only Nginx:80 published; app UID=10001
+PASS: frontend/backend separation; backend is internal
+Recreating Compose containers without removing pgdata...
+PASS: PostgreSQL note survived container recreation
+Found note #1 after recreation: persistence-f614c05165e94e8a8c7e0d345570fc78
+
+PASS: /health returns HTTP 503 when PostgreSQL is unavailable
+PASS: /health returns HTTP 200 after PostgreSQL restarts
