@@ -1,0 +1,12 @@
+.git
+.env
+.env.*
+.venv
+.work
+**/__pycache__
+**/*.pyc
+docs
+scripts
+README.md
+docker-compose.yml
+nginx
